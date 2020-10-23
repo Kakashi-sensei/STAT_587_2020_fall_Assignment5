@@ -1,0 +1,19 @@
+---
+title: "HW5"
+author: "Tianqi(Tim)"
+date: "10/22/2020"
+output: html_document
+---
+
+```{r}
+#q2
+eruption <- read.csv("https://raw.githubusercontent.com/Kakashi-sensei/STAT_587_2020_fall_Assignment5/main/eruption.csv", header=TRUE)
+names(eruption)
+fit.lm <- lm(data=eruption, interval ~ duration)
+summary(fit.lm) 
+confint(fit.lm)
+
+
+
+```
+
